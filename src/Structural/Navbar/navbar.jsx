@@ -1,0 +1,31 @@
+import { div } from "motion/react-client";
+import { useState } from "react";
+import { VscLayoutActivitybarLeft } from "react-icons/vsc";
+import { VscLayoutActivitybarRight } from "react-icons/vsc";
+import { VscHome } from "react-icons/vsc";
+import { VscFolder } from "react-icons/vsc";
+import { VscSymbolFile } from "react-icons/vsc";
+
+import NavbarExpandedHome from "./navbar-expanded-home";
+
+export default function Navbar({ open, setOpen, navCurrent, setNavCurrent }) {
+
+    return (
+        <>
+            <nav className={`navbar ${open ? 'open' : ''}`}>
+                <button onClick={() => setOpen(!open)} className="nav-menu-btn toggle">{open ? <VscLayoutActivitybarRight size={18} color="var(--text)"/> : <VscLayoutActivitybarLeft size={18} color="var(--text)"/>}</button>
+                <button className={`nav-menu-btn ${navCurrent === 'home' ? 'current' : ''}`} onClick={() => setNavCurrent('home')} id="home-nav-btn"><VscHome size={22} color="var(--text)"/></button>
+                <label htmlFor="home-nav-btn" className="nav-btn-label">Home</label>
+                <button className={`nav-menu-btn ${navCurrent === 'contents' ? 'current' : ''}`} onClick={() => setNavCurrent('contents')} id="contents-nav-btn"><VscFolder size={22} color="var(--text)"/></button>
+                <label htmlFor="contents-nav-btn" className="nav-btn-label">Contents</label>
+                <button className={`nav-menu-btn ${navCurrent === 'guide' ? 'current' : ''}`} onClick={() => setNavCurrent('guide')} id="guide-nav-btn"><VscSymbolFile size={22} color="var(--text)"/></button>
+                <label htmlFor="guide-nav-btn" className="nav-btn-label">Guide</label>
+            </nav>
+            <div className={`nav-expanded ${open ? 'open' : ''}`}>
+                {navCurrent === 'home' &&
+                    <NavbarExpandedHome/>
+                }
+            </div> 
+        </>
+    )
+}

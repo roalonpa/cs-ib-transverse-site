@@ -1,0 +1,108 @@
+:root {
+  --text: #6b6375;
+  --text-h: #0c0722;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --accent: #aa3bff;
+  --accent-secondary: rgba(80, 80, 80, 0.1);
+  --accent-bg: rgba(142, 37, 222, 0.05);
+  --accent-bg-secondary: rgba(83, 0, 146, 0.2);
+  --accent-border: rgb(220, 205, 232);
+  --social-bg: rgba(235, 235, 235, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 0 6px -3px, rgba(0, 0, 0, 0.1) 0 0 3px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--social-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #151517;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+#root {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  position: relative;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 46px;
+  letter-spacing: -1px;
+  margin: 32px 0;
+  line-height: 118%;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+}
+

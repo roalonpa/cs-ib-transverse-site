@@ -1,0 +1,158 @@
+section.app {
+    display: flex;
+    flex-direction: row;
+}
+
+nav.navbar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80px;
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+nav.navbar button.nav-menu-btn {
+    background: none;
+    border: none;
+    margin: 12px auto 0 auto;
+    padding: 4px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s ease-in-out;
+}
+
+nav.navbar button.nav-menu-btn.toggle {
+    margin-bottom: 28px;
+}
+
+nav.navbar button.nav-menu-btn:hover {
+    background: var(--accent-bg);
+}
+
+nav.navbar button.nav-menu-btn:active {
+    background: var(--accent-border);
+}
+
+nav.navbar button.nav-menu-btn.current {
+    background: var(--accent-secondary);
+}
+
+nav.navbar label.nav-btn-label {
+    font-family: var(--sans);
+    font-size: 13px;
+    text-align: center;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+div.nav-expanded {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    max-width: 200px;
+    transition: width 0.2s ease, opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.nav-expanded.open {
+    width: 270px;
+    opacity: 1;
+}
+
+div.nav-expanded-home-box {
+    border: 1px solid var(--accent-border);
+    border-radius: 12px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+div.nav-expanded-home-box.title {
+    background: var(--bg);
+    height: 200px;
+}
+
+div.nav-expanded-home-box.title span,
+div.nav-expanded-home-box.site-info span {
+    font-family: var(--sans);
+    font-size: 18px;
+    background: linear-gradient(135deg, var(--text-h) 10%, var(--accent) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 20px;
+}
+
+div.nav-expanded-home-box.countdown {
+    height: 150px;
+}
+
+div.nav-expanded-home-box.countdown span {
+    font-family: var(--sans);
+    font-size: 18px;
+    text-align: center;
+    margin: 0 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+div.nav-expanded-home-box.countdown span span {
+    font-family: var(--mono);
+    font-size: 42px;
+    padding: 10px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--text-h) 10%, var(--accent) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div.nav-expanded-home-box.site-info {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.nav-expanded-home-box.site-info p {
+    font-family: var(--sans);
+    font-size: 14px;
+    text-align: justify;
+    color: var(--text);
+    margin: 8px 20px;
+    line-height: 1.2;
+}
+
+
+/* Home */
+
+section.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: radial-gradient(circle at center, var(--bg) 50%, var(--accent-bg) 100%);
+    border-radius: 16px 16px 0 0;
+}
+
+h1.home-title {
+    margin: 52px 0;
+    padding: 20px;
+    background: linear-gradient(170deg, var(--text-h) 10%, var(--accent) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
