@@ -156,3 +156,98 @@ h1.home-title {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+div.home-contents-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+div.home-contents-wrapper div.home-contents-unit {
+    border: 1px solid var(--accent-border);
+    border-radius: 16px;
+    min-width: 500px;
+    width: 42%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.home-contents-wrapper div.home-contents-unit h2 span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-bg);
+    width: 45px;
+    height: 45px;
+    border: 1px solid var(--accent-border);
+    border-radius: 50%;
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+div.home-contents-wrapper div.home-contents-unit div.home-contents-chapter {
+    background: var(--bg);
+    border: 1px solid var(--accent-border);
+    border-radius: 12px;
+    margin: 12px 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.15s ease-in-out;
+}
+
+div.home-contents-wrapper div.home-contents-unit div.home-contents-chapter:hover {
+    background: var(--accent-bg);
+}
+
+div.home-contents-wrapper div.home-contents-unit div.home-contents-chapter h3 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.home-contents-wrapper div.home-contents-unit div.home-contents-chapter h3 span {
+    background-color: var(--accent-bg);
+    height: 100%;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    border-right: 1px solid var(--accent-border);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+div.home-contents-wrapper div.home-contents-unit div.home-contents-chapter button {
+    background-color: var(--social-bg);
+    border: 1px solid var(--accent-secondary);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+div.home-contents-wrapper div.home-contents-unit div.home-contents-chapter button:hover {
+    background-color: var(--accent-secondary);
+}
+
+div.home-contents-wrapper div.home-contents-unit div.home-contents-chapter:has(button:hover) {
+    background: none;
+}
