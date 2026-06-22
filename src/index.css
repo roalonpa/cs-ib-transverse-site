@@ -2,16 +2,16 @@
   --text: #5d5766;
   --text-h: #0c0722;
   --bg: #fff;
-  --border: #e5e4e7;
-  --accent: #8e4bc1;
-  --accent-darker: #4a1077;
-  --accent-secondary: rgba(80, 80, 80, 0.15);
+  --border: #b2b2bb;
+  --accent: #9158c0;
+  --accent-darker: #441a67;
+  --accent-secondary: rgba(80, 80, 80, 0.2);
   --accent-bg: rgba(146, 18, 245, 0.05);
-  --accent-bg-secondary: rgba(83, 0, 146, 0.2);
+  --accent-bg-secondary: rgba(101, 0, 178, 0.2);
   --accent-border: rgb(220, 205, 232);
   --social-bg: rgba(235, 235, 235, 0.5);
   --shadow:
-    rgba(0, 0, 0, 0.1) 0 0 6px -3px, rgba(0, 0, 0, 0.1) 0 0 3px -2px;
+    rgba(0, 0, 0, 0.1) 0 6px 12px -12px, rgba(0, 0, 0, 0.1) 0 5px 10px -5px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -66,14 +66,22 @@ body {
 
 main {
   position: relative;
+  width: 100%;
+  margin: 0 16px;
+  max-height: 100vh;
+}
+
+main > div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 99%;
   background: var(--bg);
   display: flex;
   flex-direction: column;
   border-radius: 16px 16px 0 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  width: 100%;
-  margin: 10px;
-  margin-bottom: 0;
+  overflow-y: auto;
 }
 
 h1,
@@ -81,6 +89,11 @@ h2 {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
+}
+
+h3, h4 {
+  font-family: var(--sans);
+  color: var(--text);
 }
 
 h1 {
@@ -104,7 +117,77 @@ h2 {
   }
 }
 
-p {
-  margin: 0;
+h3 {
+  font-size: 20px;
+  line-height: 118%;
+  letter-spacing: -0.18px;
+  font-weight: 600;
+  margin: 4px 0;
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
+h4 {
+  font-size: 18px;
+  line-height: 118%;
+  letter-spacing: -0.18px;
+  font-weight: 400;
+  margin: 4px 0;
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+p {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table thead {
+  background-color: var(--accent-bg);
+}
+
+table tbody {
+  background-color: var(--bg);
+}
+
+table tr {
+  transition: background-color 0.1s ease-in-out;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--social-bg);
+}
+
+table thead tr:hover, table tbody tr:hover {
+    background-color: var(--accent-bg);
+}
+
+table thead th{
+  color: var(--text-h);
+  font-family: var(--heading);
+}
+
+table tbody td {
+  color: var(--text);
+  font-family: var(--sans);
+}
+
+table tr td, table tr th {
+  font-size: 16px;
+  padding: 4px 0;
+}

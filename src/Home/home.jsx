@@ -1,11 +1,13 @@
 import { useContext } from "react"
 import { ContentsContext } from "../App"
+import { NavbarContext } from "../App"
 
 import { VscArrowSmallRight } from "react-icons/vsc";
 
 export default function Home() {
 
     const contents = useContext(ContentsContext)
+    const { setNavCurrent } = useContext(NavbarContext)
 
     return (
         <section className="home">
@@ -21,7 +23,6 @@ export default function Home() {
                                         return (
                                             <div className="home-contents-chapter" key={chapter.chapter}>
                                                 <h3><span>{chapter.chapter}</span> {chapter.chapterName}</h3>
-                                                <button><VscArrowSmallRight size={24} color="var(--text)"/></button>
                                             </div>
                                         )
                                     })
@@ -30,6 +31,9 @@ export default function Home() {
                         </div>
                     )
                 })}
+                <button className="home-contents-unit-more" onClick={() => setNavCurrent("contents")}>
+                    <span>Go to contents</span>
+                </button>
             </div>
         </section>
     )

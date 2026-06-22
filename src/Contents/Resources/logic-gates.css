@@ -1,0 +1,104 @@
+.logic-gates header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.logic-gates h1.titulo {
+    margin: 0;
+}
+
+.logic-gates header p.description {
+    margin: 20px 40px;
+}
+
+/* Sección de compuertas lógicas */
+
+.logic-gates section#compuertas {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logic-gates div#compuertas-container {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 20px;
+}
+
+.logic-gates div.compuerta-card {
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 20px;
+    border-radius: 14px;
+    border: 1px solid var(--accent-secondary);
+    box-shadow: var(--shadow);
+}
+
+.logic-gates h2.compuerta-titulo {
+    margin: 0 0 8px;
+}
+
+.logic-gates p.description {
+    text-align: center;
+}
+
+/* Tables styles */
+
+.logic-gates tr {
+    text-align: center;
+}
+
+.logic-gates .compuerta-simulator {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logic-gates .simulator-inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.logic-gates .simulator-span {
+    font-size: 16px;
+    font-family: var(--sans);
+    color: var(--text);
+}
+
+.logic-gates .simulator-btn {
+    background-color: var(--social-bg);
+    width: 50px;
+    height: 50px;
+    color: var(--text);
+    border: 1px solid var(--accent-secondary);
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.logic-gates .simulator-btn.active {
+    background-color: var(--accent-darker);
+    color: var(--bg);
+}
+
+.logic-gates .simulator-btn.result {
+    cursor: default;
+}
+
+.logic-gates .simulator-btn:hover:not(.result) {
+    background-color: var(--accent-bg-secondary);
+}

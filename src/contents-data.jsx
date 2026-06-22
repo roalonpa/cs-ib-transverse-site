@@ -1,3 +1,7 @@
+import ComponentLogicGates from "./Contents/Resources/logic-gates.jsx";
+import OperatingSystems from "./Contents/Resources/operating-systems.jsx";
+
+
 export const contents = [
     {
       unit: "A",
@@ -9,19 +13,35 @@ export const contents = [
           topics: [
             {
               topic: "A1.1",
-              topicName: "Computer hardware and operation"
+              topicName: "Computer hardware and operation",
+              resources: []
             },
             {
               topic: "A1.2",
-              topicName: "Data representation and computer logic"
+              topicName: "Data representation and computer logic",
+              resources: [
+                {
+                  resourceName: "Logic Gates",
+                  resourceType: "component",
+                  resource: <ComponentLogicGates/>
+                },
+              ]
             },
             {
               topic: "A1.3",
-              topicName: "Operating systems and control systems"
+              topicName: "Operating systems and control systems",
+              resources: [
+                {
+                  resourceName: "Operating Systems",
+                  resourceType: "component",
+                  resource: <OperatingSystems/>
+                }
+              ]
             },
             {
               topic: "A1.4",
-              topicName: "Translation (HL only)"
+              topicName: "Translation (HL only)",
+              resources: []
             }
           ]
         },
@@ -31,19 +51,23 @@ export const contents = [
           topics: [
             {
               topic: "A2.1",
-              topicName: "Network fundamentals"
+              topicName: "Network fundamentals",
+              resources: []
             },
             {
               topic: "A2.2",
-              topicName: "Network architecture"
+              topicName: "Network architecture",
+              resources: []
             },
             {
               topic: "A2.3",
-              topicName: "Data transmissions"
+              topicName: "Data transmissions",
+              resources: []
             },
             {
               topic: "A2.4",
-              topicName: "Network security"
+              topicName: "Network security",
+              resources: []
             }
           ]
         },
@@ -53,19 +77,23 @@ export const contents = [
           topics: [
             {
               topic: "A3.1",
-              topicName: "Database fundamentals"
+              topicName: "Database fundamentals",
+              resources: []
             },
             {
               topic: "A3.2",
-              topicName: "Database design"
+              topicName: "Database design",
+              resources: []
             },
             {
               topic: "A3.3",
-              topicName: "Database programming"
+              topicName: "Database programming",
+              resources: []
             },
             {
               topic: "A3.4",
-              topicName: "Alternative databases and data warehouses (HL only)"
+              topicName: "Alternative databases and data warehouses (HL only)",
+              resources: []
             }
           ]
         },
@@ -75,19 +103,23 @@ export const contents = [
           topics: [
             {
               topic: "A4.1",
-              topicName: "Machine learning fundamentals"
+              topicName: "Machine learning fundamentals",
+              resources: []
             },
             {
               topic: "A4.2",
-              topicName: "Data preprocessing (HL only)"
+              topicName: "Data preprocessing (HL only)",
+              resources: []
             },
             {
               topic: "A4.3",
-              topicName: "Machine learning approaches (HL only)"
+              topicName: "Machine learning approaches (HL only)",
+              resources: []
             },
             {
               topic: "A4.4",
-              topicName: "Ethical considerations"
+              topicName: "Ethical considerations",
+              resources: []
             }
           ]
         }
@@ -103,7 +135,8 @@ export const contents = [
           topics: [
             {
               topic: "B1.1",
-              topicName: "Approaches to computational thinking"
+              topicName: "Approaches to computational thinking",
+              resources: []
             }
           ]
         },
@@ -113,23 +146,28 @@ export const contents = [
           topics: [
             {
               topic: "B2.1",
-              topicName: "Programming fundamentals"
+              topicName: "Programming fundamentals",
+              resources: []
             },
             {
               topic: "B2.2",
-              topicName: "Data structures"
+              topicName: "Data structures",
+              resources: []
             },
             {
               topic: "B2.3",
-              topicName: "Programming constructs"
+              topicName: "Programming constructs",
+              resources: []
             },
             {
               topic: "B2.4",
-              topicName: "Programming algorithms"
+              topicName: "Programming algorithms",
+              resources: []
             },
             {
               topic: "B2.5",
-              topicName: "File processing"
+              topicName: "File processing",
+              resources: []
             }
           ]
         },
@@ -139,11 +177,13 @@ export const contents = [
           topics: [
             {
               topic: "B3.1",
-              topicName: "Fundamentals of OOP for a single class"
+              topicName: "Fundamentals of OOP for a single class",
+              resources: []
             },
             {
               topic: "B3.2",
-              topicName: "Fundamentals of OOP for multiple classes (HL only)"
+              topicName: "Fundamentals of OOP for multiple classes (HL only)",
+              resources: []
             }
           ]
         },
@@ -153,7 +193,8 @@ export const contents = [
           topics: [
             {
               topic: "B4.1",
-              topicName: "Fundamentals of ADTs"
+              topicName: "Fundamentals of ADTs",
+              resources: []
             }
           ]
         }
