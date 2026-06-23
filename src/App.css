@@ -337,6 +337,13 @@ main.main-contains-content > div {
     justify-content: flex-start;
 }
 
+main.main-contains-content > div > div.resource {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1.contents-title {
     text-align: center;
     margin: 52px 0;

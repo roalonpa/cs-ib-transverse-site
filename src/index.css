@@ -152,6 +152,7 @@ p {
 }
 
 table {
+  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;

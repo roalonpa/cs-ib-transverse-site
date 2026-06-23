@@ -1,14 +1,13 @@
-div.operating-systems-role-functions-A1-3-resource {
+div.operating-systems-role-functions-A1-3.resource {
     display: flex;
     flex-direction: column;
     gap: 40px;
     align-items: center;
     justify-content: center;
-    width: 90%;
     margin-bottom: 40px;
 }
 
-.operating-systems-role-functions-A1-3-resource section.operating-systems-A1-3-section {
+.operating-systems-role-functions-A1-3.resource section.operating-systems-A1-3-section {
     width: 100%;
     border: 1px solid var(--accent-border);
     box-shadow: var(--shadow);

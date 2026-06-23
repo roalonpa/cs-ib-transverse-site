@@ -1,5 +1,6 @@
 import ComponentLogicGates from "./Contents/Resources/logic-gates.jsx";
 import OperatingSystems from "./Contents/Resources/operating-systems.jsx";
+import PollingInterrupt from "./Contents/Resources/polling-interrupt.jsx";
 
 
 export const contents = [
@@ -35,6 +36,11 @@ export const contents = [
                   resourceName: "Operating Systems",
                   resourceType: "component",
                   resource: <OperatingSystems/>
+                },
+                {
+                  resourceName: "Polling Interrupt",
+                  resourceType: "component",
+                  resource: <PollingInterrupt/>
                 }
               ]
             },

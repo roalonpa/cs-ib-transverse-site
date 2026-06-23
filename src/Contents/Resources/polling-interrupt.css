@@ -1,0 +1,15 @@
+
+div.polling-interrupt.resource table th,
+div.polling-interrupt.resource table td {
+    width: 40%;
+    text-align: left;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+div.polling-interrupt.resource table tr td:first-child,
+div.polling-interrupt.resource table tr th:first-child {
+    width: 20%;
+    font-weight: 600;
+    color: var(--text-h);
+}

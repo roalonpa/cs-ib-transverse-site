@@ -126,7 +126,7 @@ export default function ComponentLogicGates() {
     }
 
     return (
-        <div className="logic-gates">
+        <div className="logic-gates resource">
             <header>
                 <h1 className="titulo">Compuertas Lógicas</h1>
                 <span id="subtitulo">¿Cuándo hay un 0 y cuándo hay un 1?</span>
