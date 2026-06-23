@@ -4,15 +4,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 60px auto;
+    margin: 20px auto;
 }
 
 .logic-gates h1.titulo {
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 .logic-gates header p.description {
     margin: 20px 40px;
+}
+
+.logic-gates header span#subtitulo {
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 16px;
 }
 
 /* Sección de compuertas lógicas */
@@ -37,7 +43,7 @@
     justify-content: center;
     padding: 28px 20px;
     border-radius: 14px;
-    border: 1px solid var(--accent-secondary);
+    border: 1px solid var(--accent-border);
     box-shadow: var(--shadow);
 }
 

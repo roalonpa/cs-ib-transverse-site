@@ -129,7 +129,7 @@ export default function ComponentLogicGates() {
         <div className="logic-gates">
             <header>
                 <h1 className="titulo">Compuertas Lógicas</h1>
-                <h4 id="subtitulo">¿Cuándo hay un 0 y cuándo hay un 1?</h4>
+                <span id="subtitulo">¿Cuándo hay un 0 y cuándo hay un 1?</span>
                 <p className="description">Las compuertas lógicas son dispositivos electrónicos que realizan operaciones lógicas sobre una o más señales de entrada para producir una señal de salida. Estas compuertas son fundamentales en la construcción de circuitos digitales y se utilizan para implementar funciones lógicas básicas como AND, OR, NOT, NAND, NOR, XOR y XNOR.</p>
             </header>
             <section id="compuertas">

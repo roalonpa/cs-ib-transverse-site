@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './Structural/Navbar/navbar'
 import Home from './Home/home'
 import Contents from './Contents/contents'
+import Guide from './Guide/guide'
 
 import {contents} from './contents-data.jsx'
 
@@ -31,6 +32,7 @@ export default function App() {
         <div>
           {navCurrent === 'home' && <Home/>}
           {navCurrent === 'contents' && <Contents/>}
+          {navCurrent === 'guide' && <Guide/>}
         </div>
         </main>
       </section>
